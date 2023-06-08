@@ -2,10 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { useRef, useEffect } from 'react'
+import { gsap, Power3 } from 'gsap'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  var logoItem = useRef(null)
+
+  useEffect(() => {
+    console.log(logoItem)
+    gsap.to(
+      logoItem.current,
+      { opacity: 1, y: -100, duration: 1 }
+    )
+  }, [])
+  console.log(logoItem)
   return (
     <>
       <Head>
@@ -41,6 +53,7 @@ export default function Home() {
 
         <div className={styles.center}>
           <Image
+            ref={logoItem}
             className={styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
