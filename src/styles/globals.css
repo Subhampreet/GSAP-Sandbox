@@ -100,6 +100,22 @@ a {
   text-decoration: none;
 }
 
+.circle{
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: #fdcf51;
+  margin-bottom: 50px;
+}
+
+.circle.red{
+  background-color: #e53232;
+}
+
+.circle.blue{
+  background-color: #207fcd;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
