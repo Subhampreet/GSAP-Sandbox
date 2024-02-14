@@ -1,6 +1,6 @@
 <h1 align="center">GSAP Sandbox Project Environment</h1>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A Sandbox Project to Test GSAP Library Components and Implementation. This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
